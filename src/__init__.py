@@ -1,8 +1,8 @@
+from __future__ import print_function
 from future import standard_library
 standard_library.install_aliases()
 from builtins import next
 from builtins import object
-import configparser
 
 class Upper(object):
     def __init__(self, iterable):
@@ -13,6 +13,6 @@ class Upper(object):
         return self
 
 itr = Upper('hello')
-print next(itr),
+print(next(itr), end=' ')
 for letter in itr:
-    print letter,
+    print(letter, end=' ')
